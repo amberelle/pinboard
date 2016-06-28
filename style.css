@@ -1,0 +1,27 @@
+html {
+  background: url(img/img1.png) no-repeat center center fixed;
+  background-size: cover;
+}
+.polaroid {
+  width: 400px;
+  height: 400px;
+  /*overflow: hidden;*/
+  position: absolute;
+  left: 700px;
+  top: 40px;
+}
+
+.polaroid img {
+  width: 100%;
+}
+
+.polaroid:after {
+  content:"";
+  width: 140%;
+  height: 140%;
+  position: absolute;
+  left: -17%;
+  top: -15%;
+  background: url(img/polaroid.png) no-repeat;
+  background-size: 100% 100%;
+}
